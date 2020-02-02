@@ -1,0 +1,17 @@
+#container {
+    border: 5px solid black;
+	height: 600px;
+	width: 600px;
+	margin: 0 auto;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+.divGrid {
+    border: black solid 1px;
+    height: 38px;
+    width: 38px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;  
+    box-sizing: content-box;	
+}
