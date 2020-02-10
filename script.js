@@ -4,8 +4,24 @@ function createBoard() {
         const generatedDiv = document.createElement('div');
         generatedDiv.classList.add('divGrid')
         generatedDiv.addEventListener('mouseover', (e) => {
-            generatedDiv.style.backgroundColor = 'black';
+            generatedDiv.style.backgroundColor = generateRandColor();
         });
         container.appendChild(generatedDiv);
     }
+}
+
+function clearBoard() {
+    const gridItems = document.querySelectorAll('.divGrid');
+
+    gridItems.forEach((element) => {
+        element.style.backgroundColor = 'white';
+    })
+}
+
+function generateRandColor() {
+    const red = Math.floor(Math.random() * 255) + 1;
+    const green = Math.floor(Math.random() * 255) + 1;
+    const blue = Math.floor(Math.random() * 255) + 1;
+
+    return `rgb(${red}, ${green}, ${blue})`
 }

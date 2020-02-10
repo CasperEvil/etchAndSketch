@@ -1,8 +1,9 @@
-#container {
+#gridContainer {
     border: 5px solid black;
 	height: 600px;
 	width: 600px;
-	margin: 0 auto;
+    margin: 0 auto;
+    margin-top: 2%;
     padding: 0px;
     flex-wrap: wrap;
 }
@@ -14,4 +15,14 @@
     margin: 0px;
     padding: 0px;  
     box-sizing: content-box;	
+}
+.title {
+    text-align: center;
+}
+.description {
+    text-align: center;
+}
+.clearBtn {
+    margin: 0 auto;
+    display: block;
 }
